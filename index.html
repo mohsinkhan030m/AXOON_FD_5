@@ -6,9 +6,14 @@
   </head>
   <body>
     <header>
-      <div class="log-div"><img src="logo img.png" class="logo-img" /></div>
+      <div class="log-div"><img src="logo pic.png" class="logo-img" /></div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <nav>
-        <div class="menu-wraper">
+        <div class="menu-wraper" id="menu">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -221,9 +226,62 @@
         <div class="form-group full-width">
           <textarea placeholder="Your Message" rows="5" required></textarea>
         </div>
-
         <button type="submit">Submit</button>
       </form>
     </section>
+    <footer>
+      <div class="f-uper">
+        <div class="logo-div2">
+          <img src="logo pic.png" class="footer-img" />
+        </div>
+        <nav>
+          <div class="f-menu-wraper">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="f-btn">
+          <ul class="f-ul">
+            <li>
+              <a href="www.Facebook.com"><img src="fb.png" /></a>
+            </li>
+            <li>
+              <a href="www.instagram.com"
+                ><img src="instaa.png" class="insta-img"
+              /></a>
+            </li>
+            <li>
+              <a href="www.x.com"><img src="X.png" /></a>
+            </li>
+            <li>
+              <a href="www.LinkedIn.com"><img src="Linkedin.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="last-div">
+        <h4>Made by Muhsan Khan</h4>
+        <div class="l-menu-wraper"></div>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Term of service</a></li>
+          <li><a href="#">Cookie Settings </a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const menu = document.getElementById("menu");
+
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("show");
+        hamburger.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
